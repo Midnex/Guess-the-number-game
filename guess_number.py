@@ -1,12 +1,10 @@
 import random
 
-print('Hello! What is your name?')
-name = input()  # string input from user
+name = input('Hello! What is your name?\n') # Shorter version, by including text within input().
 secret_number = random.randint(1, 20)  # random integer between 1 and 20
 print(f'{name} I am thinking of a number between 1 and 20')
 for _ in range(6):  # the user has 6 guesses
-    print('Take a guess.')
-    guess = int(input())
+    guess = int(input('Take a guess\n') # Shorter version, by including text within input().
     if guess > secret_number:
         print('Your guess is too high')
     elif guess < secret_number:
